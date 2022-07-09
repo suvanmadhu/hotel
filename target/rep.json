@@ -1,0 +1,203 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Verify Adactin Login With Valid Credentials",
+        "description": "",
+        "id": "verifying-adactin-hotel-login-page;verify-adactin-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3992271,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the Adactin Home Page",
+            "match": {
+              "location": "LoginPageStep.user_is_on_the_Adactin_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.base.BaseClass.sendData(BaseClass.java:116)\r\n\tat com.base.Loginpage.login(Loginpage.java:52)\r\n\tat com.stepdefinition.LoginPageStep.user_Should_Perform_Login(LoginPageStep.java:31)\r\n\tat ✽.User Should Perform Login \"madhusuvan\",\"V89276\"(src/test/resources/Features/TC1_LoginPage.feature:6)\r\n",
+              "duration": 52904053,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User Should Perform Login \"madhusuvan\",\"V89276\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"madhusuvan\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"V89276\"",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginPageStep.user_Should_Perform_Login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32021,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User Should Verify Welcome Message After Login \"Hello madhusuvan!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello madhusuvan!\"",
+                  "offset": 47
+                }
+              ],
+              "location": "CommonStep.user_Should_Verify_Welcome_Message_After_Login(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Verify Adactin Login With Valid Credentials With ENTER key",
+        "description": "",
+        "id": "verifying-adactin-hotel-login-page;verify-adactin-login-with-valid-credentials-with-enter-key;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 752066,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is on the Adactin Home Page",
+            "match": {
+              "location": "LoginPageStep.user_is_on_the_Adactin_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User Should Perform Login \"madhusuvan\",\"V89276\" With Help of ENTER key",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18063,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User Should Verify Welcome Message After Login \"Hello madhusuvan!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello madhusuvan!\"",
+                  "offset": 47
+                }
+              ],
+              "location": "CommonStep.user_Should_Verify_Welcome_Message_After_Login(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Verify Adactin Login With Invalid Credentials",
+        "description": "",
+        "id": "verifying-adactin-hotel-login-page;verify-adactin-login-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 854284,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User is on the Adactin Home Page",
+            "match": {
+              "location": "LoginPageStep.user_is_on_the_Adactin_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat com.base.BaseClass.sendData(BaseClass.java:116)\r\n\tat com.base.Loginpage.login(Loginpage.java:52)\r\n\tat com.stepdefinition.LoginPageStep.user_Should_Perform_Login(LoginPageStep.java:31)\r\n\tat ✽.User Should Perform Login \"madhusuvan\",\"V89276\"(src/test/resources/Features/TC1_LoginPage.feature:24)\r\n",
+              "duration": 2160958,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "User Should Perform Login \"madhusuvan\",\"V89276\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"madhusuvan\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"V89276\"",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginPageStep.user_Should_Perform_Login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "User Should Verify Login Error Message Contains After Login \"Invalid Login Details or Your Password Might Have Expired\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin Hotel Login Page",
+    "description": "",
+    "id": "verifying-adactin-hotel-login-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/TC1_LoginPage.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

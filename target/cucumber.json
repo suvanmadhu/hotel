@@ -1,0 +1,412 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 23,
+        "name": "Verify Adactin Hotel Cancelling Page With Valid Credentials",
+        "description": "",
+        "id": "verifying-adactin-hotel-cancel-page;verify-adactin-hotel-cancelling-page-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31981296392,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the Adactin Home Page",
+            "match": {
+              "location": "LoginPageStep.user_is_on_the_Adactin_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1886564035,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Should Perform Login \"madhusuvan\",\"V89276\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"madhusuvan\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"V89276\"",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginPageStep.user_Should_Perform_Login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 949118,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Should Verify Welcome Message After Login \"Hello madhusuvan!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello madhusuvan!\"",
+                  "offset": 47
+                }
+              ],
+              "location": "CommonStep.user_Should_Verify_Welcome_Message_After_Login(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3877572460,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Should Fill \u0026 Submit All Feilds In Search Hotel Page \"London\",\"Hotel Creek\",\"Standard\",\"1\",\"26/06/2022\",\"27/06/2022\",\"2\" and \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"London\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 81
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"26/06/2022\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"27/06/2022\"",
+                  "offset": 109
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 122
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 130
+                }
+              ],
+              "location": "SearchHotelStep.user_Should_Fill_Submit_All_Feilds_In_Search_Hotel_Page_and(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112901061,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Should Verify Message After Search \"Select Hotel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Select Hotel\"",
+                  "offset": 40
+                }
+              ],
+              "location": "SearchHotelStep.user_Should_Verify_Message_After_Search(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1116502535,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Should Select Hotel",
+            "match": {
+              "location": "SelectHotelStep.user_Should_Select_Hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133616618,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Should Verify Message After Select \"Book A Hotel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book A Hotel\"",
+                  "offset": 40
+                }
+              ],
+              "location": "SelectHotelStep.user_Should_Verify_Message_After_Select(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1807932602,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Should Book Hotel \"barath\",\"c\" and \"chennai\"and save generated orderID",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"barath\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"c\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"chennai\"",
+                  "offset": 40
+                }
+              ],
+              "location": "BookingHotelStep.userShouldBookHotelAndAndSaveGeneratedOrderID(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CreditCardType",
+                  "CreditCardNo",
+                  "Month",
+                  "Year",
+                  "CVVNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "American Express",
+                  "1234567887654321",
+                  "December",
+                  "2022",
+                  "321"
+                ]
+              },
+              {
+                "cells": [
+                  "Visa",
+                  "1234567887654321",
+                  "December",
+                  "2022",
+                  "321"
+                ]
+              },
+              {
+                "cells": [
+                  "Master",
+                  "1234567887654321",
+                  "December",
+                  "2022",
+                  "321"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180218,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User Should Verify Message After Booking \"Booking Confirmation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Booking Confirmation\"",
+                  "offset": 41
+                }
+              ],
+              "location": "BookingHotelStep.user_Should_Verify_Message_After_Booking(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34620917450,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User Should Cancel The Order Id",
+            "match": {
+              "location": "CencelBookingStep.user_Should_Cancel_The_Order_Id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208133,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Should Verify Message After Cancelling \"The booking has been cancelled.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The booking has been cancelled.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "CencelBookingStep.user_Should_Verify_Message_After_Cancelling(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CancelHotel"
+          },
+          {
+            "name": "@RunAll"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Verify Adactin Hotel Cancelling Page With Valid Credentials",
+        "description": "",
+        "id": "verifying-adactin-hotel-cancel-page;verify-adactin-hotel-cancelling-page-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7477552672,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User is on the Adactin Home Page",
+            "match": {
+              "location": "LoginPageStep.user_is_on_the_Adactin_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1563313160,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User Should Perform Login \"madhusuvan\",\"V89276\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"madhusuvan\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"V89276\"",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginPageStep.user_Should_Perform_Login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182270,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User Should Verify Welcome Message After Login \"Hello madhusuvan!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello madhusuvan!\"",
+                  "offset": 47
+                }
+              ],
+              "location": "CommonStep.user_Should_Verify_Welcome_Message_After_Login(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2241525780,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User Should Cancel The Previously Booked Order Id \"K798FOFQ86\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"K798FOFQ86\"",
+                  "offset": 50
+                }
+              ],
+              "location": "CencelBookingStep.user_Should_Cancel_The_Previously_Booked_Order_Id(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 353866,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User Should Verify Message After Cancelling \"The booking has been cancelled.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The booking has been cancelled.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "CencelBookingStep.user_Should_Verify_Message_After_Cancelling(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CancelHotel"
+          },
+          {
+            "name": "@RunAll"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin Hotel Cancel Page",
+    "description": "",
+    "id": "verifying-adactin-hotel-cancel-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/TC5_CancelBooking.feature",
+    "tags": [
+      {
+        "name": "@CancelHotel",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@RunAll",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
+  }
+]
